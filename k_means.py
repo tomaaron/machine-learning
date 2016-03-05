@@ -18,11 +18,10 @@ def calculate_new_means(labels,d,means):
 def kmeans(data,k):
 	means_old = random_means(data,k)
 	d = sys.maxint 
-	labels = assign_to_means(data,means_old)
 	epsilon = 1
 	while(d > epsilon):
+		labels = assign_to_means(data,means_old)
 		means_new = calculate_new_means(labels,data,means_old)
-		labels = assign_to_means(data,means_new)
 		d = s_eucl_distance(means_old,means_new)
 		means_old = means_new
 	return means_old
