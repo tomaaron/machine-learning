@@ -29,7 +29,7 @@ def naive_bayes(w1train,w2train,test):
 	print 'class 2',p_2
 	print 'bla_1', p_1 / (p_1+p_2)
 	print 'bla_2', p_2 / (p_1+p_2)
-	x1 = np.linspace(-3,3,100)
+	x1 = np.linspace(-3,8,100)
 	plt.title('Epic Info')
 	plt.ylabel('Y axis')
 	plt.xlabel('X axis')
